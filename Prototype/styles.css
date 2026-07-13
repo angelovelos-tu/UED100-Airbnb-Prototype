@@ -13,7 +13,7 @@
 ================*/
 
 body {
-    font-family: Arial, Helvetica ,sans-serif;
+    font-family:Arial, Helvetica ,sans-serif;
     line-height: 1.6;
 }
 
@@ -29,7 +29,7 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: 20px 40px;
 }
 
@@ -38,6 +38,10 @@ nav ul {
     gap: 20px;
     list-style: none;
 }
+
+/*================
+    Hero
+================*/
 
 .hero {
     padding: 100px 40px;
@@ -69,17 +73,33 @@ nav ul {
     text-align: left;
 }
 
-.hero form label {
+.form-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
-.hero form input,
-.hero form select {
+.form-group input,
+.form-group select {
     min-width: 180px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font: inherit;
+}
+
+.hero form button {
+    padding: 12px 24px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero form button:hover {
+    background-color: #e14b50;
 }
