@@ -51,3 +51,22 @@ The prototype will build upon Assessment 1 by demonstrating good UX/UI design pr
 ## Technical Rationale
 - [ ] 200 words
 - [ ] APA references
+
+## 🟩 To Do
+
+- [ ] Design homepage
+- [ ] Create wireframes
+- [ ] Build HTML
+- [ ] Add CSS
+- [ ] Add responsiveness
+- [ ] Add JavaScript
+- [ ] Test mobile
+- [ ] Write rationale
+
+---
+
+## 🟨 In Progress
+
+---
+
+## ✅ Completed
