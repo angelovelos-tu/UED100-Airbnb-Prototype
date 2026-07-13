@@ -30,41 +30,45 @@
             </p>
 
             <form>
-                <label for="destination">Destination:</label>
+                
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" 
+                           id="destination" 
+                           name="destination" 
+                    >
+                </div>
 
-                <input
-                    type="text"
-                    id="destination"
-                    name="destination"
-                >
+                <div class="form-group">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" 
+                           id="checkin" 
+                           name="checkin" 
+                    >
+                </div>
 
-                <label for="checkin">Check-in:</label>
-                <input
-                    type="date"
-                    id="check-in"
-                    name="check-in"
-                >
+                <div class="form-group">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" 
+                           id="checkout" 
+                           name="checkout" 
+                    >
+                </div>
 
-                <label for="checkout">Check-out:</label>
-                <input
-                    type="date"
-                    id="check-out"
-                    name="check-out"
-                >
-
-                <!-- Guests dropdown menu -->
-                <label for="guests">Guests:</label>
-                <select
-                    id="guests"
-                    name="guests"
-                >
-                    <option value="">Select guests</option>
-                    <option value="1">1 Guest</option>
-                    <option value="2">2 Guests</option>
-                    <option value="3">3 Guests</option>
-                    <option value="4">4 Guests</option>
-                    <option value="5">5+ Guests</option>
-                </select>
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select 
+                        id="guests" 
+                        name="guests"
+                    >
+                        <option value="0">Select number of guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5+ Guests</option>
+                    </select>
+                </div>
 
                 <button type="submit">Search</button>
 
