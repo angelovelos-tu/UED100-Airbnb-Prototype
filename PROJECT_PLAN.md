@@ -1,72 +1,79 @@
-# UED100 Assessment 2 - Airbnb Prototype
+# UED100 Assessment 2 - Project Plan
 
-# UED100 Assessment 2
-## Airbnb Prototype
-
----
-
-# Objective
-
-Develop a responsive Airbnb-inspired web interface prototype using HTML, CSS and JavaScript.
-
-The prototype will build upon Assessment 1 by demonstrating good UX/UI design principles, responsive layouts, semantic HTML, JavaScript interactivity and clean source code.
+## Project
+**StayEase - Accommodation Booking Prototype**
 
 ---
 
-# Success Criteria
+# Assignment Objective
 
-- Responsive on desktop and mobile
-- Professional appearance
-- Interactive JavaScript components
-- Well-commented source code
-- Git commits throughout development
-- Meets every rubric criterion
+Develop a responsive accommodation booking web interface inspired by Airbnb using HTML, CSS and JavaScript.
+
+The prototype will build upon Assessment 1 by demonstrating modern UX/UI principles, responsive design, semantic HTML, JavaScript interactivity and well-organised source code.
 
 ---
 
----
+# Deliverables
 
-# Rubric Checklist
-
-## User Interface
-- [ ] Homepage
-- [ ] Listing page
-- [ ] Booking page
-- [ ] Mobile responsive
-- [ ] Consistent colour palette
-
-## Interactive Components
-- [ ] Search bar
-- [ ] Responsive navigation
-- [ ] Contact form
-- [ ] JavaScript validation
-- [ ] Booking confirmation
-
-## Source Code
-- [ ] HTML commented
-- [ ] CSS organised
-- [ ] JavaScript organised
-- [ ] Git commits
-
-## Technical Rationale
-- [ ] 200 words
-- [ ] APA references
-
-## 🟩 To Do
-
-- [ ] Design homepage
-- [ ] Create wireframes
-- [ ] Build HTML
-- [ ] Add CSS
-- [ ] Add responsiveness
-- [ ] Add JavaScript
-- [ ] Test mobile
-- [ ] Write rationale
+- [ ] Interactive prototype
+- [ ] Source code
+- [ ] GitHub repository
+- [ ] 200-word technical rationale
+- [ ] Final ZIP submission
 
 ---
 
-## 🟨 In Progress
+# User Persona
+
+**Name:** Sarah
+
+- 28 years old
+- Uses her phone to book accommodation
+- Wants a quick and simple booking experience
+- Values clear information and an easy checkout process
 
 ---
 
-## ✅ Completed
+# Problem Statement
+
+Users need an intuitive accommodation booking platform that allows them to quickly search, view and book properties with minimal effort.
+
+---
+
+# User Journey
+
+Home
+↓
+Search Accommodation
+↓
+View Property
+↓
+Book Property
+↓
+Booking Confirmation
+
+---
+
+# Website Pages
+
+- Home
+- Search Results
+- Property Details
+- Booking
+- Contact
+
+---
+
+# Technologies
+
+- HTML
+- CSS
+- JavaScript
+- VS Code
+- GitHub
+
+---
+
+# Current Status
+
+🟡 Planning
