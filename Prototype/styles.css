@@ -31,12 +31,30 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+header > a {
+    color: rgb(149, 22, 22);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav ul { 
     display: flex;
     gap: 20px;
     list-style: none;
+}
+
+nav a {
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(149, 22, 22);
 }
 
 /*================
