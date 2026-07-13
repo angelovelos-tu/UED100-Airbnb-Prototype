@@ -7,10 +7,69 @@
 </head>
 <body>
     <header>
+        <a href = "index.html">StayEase</a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Stays</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
     </header>
+
     <main>
+        <section>
+            <h1>Find Your Perfect Stay</h1>
+            <p>Discover comfortable accomodation across Australia,
+                from city apartments to coastal escapes.
+            </p>
+
+            <form>
+                <label for="destination">Destination:</label>
+
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                >
+
+                <label for="checkin">Check-in:</label>
+                <input
+                    type="date"
+                    id="check-in"
+                    name="check-in"
+                >
+
+                <label for="checkout">Check-out:</label>
+                <input
+                    type="date"
+                    id="check-out"
+                    name="check-out"
+                >
+
+                <!-- Guests dropdown menu -->
+                <label for="guests">Guests:</label>
+                <select
+                    id="guests"
+                    name="guests"
+                >
+                    <option value="">Select guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5+ Guests</option>
+                </select>
+
+            </form>
+            
+        </section>
     </main>
-    <footer> 
+
+    <footer>
+         
     </footer>
     
 </body>
