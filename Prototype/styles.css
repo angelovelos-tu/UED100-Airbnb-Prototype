@@ -38,3 +38,7 @@ nav ul {
     gap: 20px;
     list-style: none;
 }
+
+.hero {
+    padding: 100px 20px;
+}
