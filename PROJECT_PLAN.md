@@ -13,6 +13,18 @@ The prototype will build upon Assessment 1 by demonstrating modern UX/UI princip
 
 ---
 
+## Definition of Done
+
+The project is complete when:
+
+- Every rubric criterion has been met.
+- All pages function correctly.
+- The website is responsive on desktop and mobile.
+- JavaScript interactions work correctly.
+- Source code is organised and commented.
+- Git history shows consistent development.
+- The technical rationale is complete and referenced.
+
 # Deliverables
 
 - [ ] Interactive prototype
