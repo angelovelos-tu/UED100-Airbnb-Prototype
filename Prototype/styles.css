@@ -121,3 +121,50 @@ nav a:hover {
 .hero form button:hover {
     background-color: #e14b50;
 }
+
+.featured-stays {
+    padding: 80px 40px;
+    background-color: #e7e7e7;
+}
+
+.featured-stays h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.featured-stays p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.property-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.property-card {
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.property-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+.property-card p {
+    color: #555;
+}
+
+.property-card p:last-child {
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(149, 22, 22);
+}
