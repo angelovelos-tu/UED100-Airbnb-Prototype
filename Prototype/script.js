@@ -15,3 +15,22 @@ searchForm.addEventListener('submit', function(event) {
     searchMessage.textContent = 
     `Searching for ${guests} ${guestLabel} in ${destination}...`;
 });
+
+const contactForm = document.getElementById('contact-form');
+const contactStatus = document.getElementById('contact-status');
+
+const contactName = document.getElementById('contact-name');
+
+contactForm.addEventListener('submit', function(event) {
+
+    event.preventDefault();
+
+    const name = contactName.value.trim();
+
+    contactStatus.textContent = 
+    `Thank you for your message, ${name}! 
+    We will get back to you soon.`;
+
+    contactForm.reset();
+
+});
