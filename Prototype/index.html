@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="styles.css">
     
 </head>
-<body>
+<body id="top">
     <header>
         <a href="index.html">StayEase</a>
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Stays</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#featured-stays">Stays</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -29,7 +29,7 @@
                 from city apartments to coastal escapes.
             </p>
 
-            <form>
+            <form id="search-form">
                 
                 <div class="form-group">
                     <label for="destination">Destination</label>
@@ -77,10 +77,16 @@
                 <button type="submit">Search</button>
 
             </form>
+
+            <p
+                id="search-message"
+                role="status"
+                aria-live="polite"
+            ></p> 
             
         </section>
 
-        <section class="featured-stays">
+        <section class="featured-stays" id="featured-stays">
 
             <h2>Featured Stays</h2>
 
@@ -96,7 +102,7 @@
 
                     <h3>Salisbury North</h3>
                     <p>Adelaide, South Australia</p>
-                    <p class="price">$120/night</p>
+                    <p class="price">$120 / night</p>
 
                     <button type="button">Book Now</button>
 
@@ -112,7 +118,7 @@
 
                     <h3>Bondi Beach</h3>
                     <p>Sydney, New South Wales</p>
-                    <p class="price">$200/night</p>
+                    <p class="price">$200 / night</p>
 
                     <button type="button">Book Now</button>
                 </article>
@@ -126,17 +132,63 @@
             
                     <h3>Fremantle</h3>
                     <p>Perth, Western Australia</p>
-                    <p class="price">$150/night</p>
+                    <p class="price">$150 / night</p>
                     <button type="button">Book Now</button>
                 </article>
 
             </div>
         </section>
+
+         <section>
+
+        <section class="contact-section" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, 
+                please reach out to us.
+            </p>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+
+                    <input
+                        type="text" 
+                        id="contact-name" 
+                        name="contact-name" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    
+                    <textarea 
+                        id="contact-message" 
+                        name="contact-message" 
+                        rows="4" 
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p
+                id="contact-message-status"
+                role="status"
+                aria-live="polite"
+            ></p>
+         </section>
     </main>
 
     <footer>
          
     </footer>
-    
+
+<script src="script.js"></script>
+
 </body>
 </html>
