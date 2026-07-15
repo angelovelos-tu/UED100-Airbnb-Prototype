@@ -142,10 +142,20 @@ nav a:hover {
 
 .property-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .featured-stays {
+        padding: 60px 20px;
+    }
+}
+
+.property-list{
+    grid-template-columns: 1fr;
 }
 
 .property-card {
@@ -153,8 +163,17 @@ nav a:hover {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 12px;
+    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display:block;
+    margin-bottom: 20px;
 }
 
 .property-card:hover {
@@ -175,4 +194,35 @@ nav a:hover {
     margin-top: 10px;
     font-weight: bold;
     color: rgb(149, 22, 22);
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(190, 24, 24)
+}
+
+.rating {
+    font-size: 1rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.property-card button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 18px;
+    background-color: #ff5a5f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.property-card button:hover {
+    background-color: #e14b50;
+    transform: translateY(-2px);
 }
