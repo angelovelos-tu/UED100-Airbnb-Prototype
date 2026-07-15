@@ -234,3 +234,85 @@ nav a:hover {
     background-color: #e14b50;
     transform: translateY(-2px);
 }
+
+/*================
+    Contact Section
+================*/
+
+.contact-section {
+    padding: 80px 40px;
+    background-color: #f9f9f9;
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.contact-content > p {
+    max-width: 600px;
+    margin: 0 auto 32px;
+    text-align: center;
+    color: #555;
+}
+
+#contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#contact-form textarea {
+    resize:vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: 3px solid rgba(149, 22, 22, 0.2);
+    border-color: rgb(149, 22, 22);
+}
+
+#contact-form button {
+    padding: 12px 24px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: rgb(120, 18, 18);
+    transform: translateY(-2px);
+}
+
+#contact-status {
+    margin-height: 24px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 60px 20px;
+    }
+}
