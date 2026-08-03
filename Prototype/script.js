@@ -32,6 +32,7 @@ checkinInput.addEventListener('change', function() {
     }
 });
 
+// Display a message when the search form is submitted
 searchForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -56,6 +57,7 @@ const contactName = document.getElementById('contact-name');
 const contactEmail = contactForm.querySelector('input[type="email"]');
 const contactMessage = contactForm.querySelector('textarea');
 
+// Validate the contact form inputs and display a confirmation message when the form is submitted
 contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -86,8 +88,7 @@ contactForm.addEventListener('submit', function(event) {
 
     // show confirmation once all fields are valid
     contactStatus.textContent = 
-    `Thank you for your message, ${name}! 
-    We will get back to you soon.`;
+    `Thank you for your message, ${name}! We will get back to you soon.`;
     
     // reset the form
     contactForm.reset();

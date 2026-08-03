@@ -65,6 +65,13 @@ nav a:hover {
     color: rgb(149, 22, 22);
 }
 
+nav a:focus-visible {
+    outline: 3px solid rgba(149, 22, 22, 0.2);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+
 /*================
     Hero
 ================*/
@@ -130,6 +137,12 @@ nav a:hover {
     background-color: #e14b50;
 }
 
+.hero form button:focus-visible {
+    outline: 3px solid rgba(149, 22, 22, 0.2);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
 .featured-stays {
     padding: 80px 40px;
     background-color: #e7e7e7;
@@ -189,6 +202,12 @@ nav a:hover {
 .property-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12);
+}
+
+.property-card button:focus-visible {
+    outline: 3px solid rgba(149, 22, 22, 0.2);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 .property-card h3 {
@@ -304,6 +323,12 @@ nav a:hover {
 #contact-form button:hover {
     background-color: rgb(120, 18, 18);
     transform: translateY(-2px);
+}
+
+#contact-form button:focus-visible {
+    outline: 3px solid rgba(149, 22, 22, 0.2);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 #contact-status {
