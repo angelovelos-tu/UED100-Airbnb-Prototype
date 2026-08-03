@@ -57,6 +57,28 @@ const contactName = document.getElementById('contact-name');
 const contactEmail = contactForm.querySelector('input[type="email"]');
 const contactMessage = contactForm.querySelector('textarea');
 
+// Send users back to the search form when they select a property
+
+const bookButtons = document.querySelectorAll('.property-card button');
+
+bookButtons.forEach(function(button) {
+
+    button.addEventListener('click', function() {
+
+        const propertyName = button.dataset.property;
+
+        searchMessage.textContent =
+
+            `${propertyName} selected. Choose your dates and guests above.`;
+
+        searchForm.scrollIntoView({ behavior: 'smooth' });
+
+        destinationInput.focus();
+
+    });
+
+});
+
 // Validate the contact form inputs and display a confirmation message when the form is submitted
 contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
