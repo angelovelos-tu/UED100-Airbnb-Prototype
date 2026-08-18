@@ -3,6 +3,7 @@ const searchMessage = document.getElementById('search-message');
 
 const destinationInput = document.getElementById('destination');
 const guestsSelect = document.getElementById('guests');
+const roomsSelect = document.getElementById('rooms');
 
 const checkinInput = document.getElementById('checkin');
 const checkoutInput = document.getElementById('checkout');
@@ -42,11 +43,13 @@ searchForm.addEventListener('submit', function(event) {
     const checkout = checkoutInput.value;
 
     const guests = guestsSelect.value;
+    const rooms = roomsSelect.value;
 
     const guestLabel = guests === '1' ? 'guest' : 'guests';
+    const roomLabel = rooms === '1' ? 'room' : 'rooms';
 
     searchMessage.textContent = 
-    `Searching for ${guests} ${guestLabel} in ${destination} from ${checkin} to ${checkout}...`;
+    `Searching for ${guests} ${guestLabel} and ${rooms} ${roomLabel} in ${destination} from ${checkin} to ${checkout}...`;
 });
 
 
@@ -67,13 +70,30 @@ bookButtons.forEach(function(button) {
 
         const propertyName = button.dataset.property;
 
+        destinationInput.value = propertyName;
+
         searchMessage.textContent =
 
-            `${propertyName} selected. Choose your dates and guests above.`;
+            `${propertyName} selected. Choose your dates, guests and rooms.`;
 
-        searchForm.scrollIntoView({ behavior: 'smooth' });
+        //smooth return to the booking form
+        searchForm.scrollIntoView({
+             behavior: 'smooth',
+             block: 'center'
+        });
 
-        destinationInput.focus();
+        //Highlight the booking form 
+        searchForm.classList.add('booking-highlight');
+        
+        setTimeout(function() {
+            searchForm.classList.remove('booking-highlight');
+        }, 1400);
+
+        //move the user to the next logical field
+        setTimeout(function() {
+            checkinInput.focus();
+        }, 500);
+        
 
     });
 
