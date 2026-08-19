@@ -74,7 +74,7 @@ bookButtons.forEach(function(button) {
 
         searchMessage.textContent =
 
-            `${propertyName} selected. Choose your dates, guests and rooms.`;
+            `${propertyName} selected. Please choose your travel dates, guests and rooms.`;
 
         //smooth return to the booking form
         searchForm.scrollIntoView({
@@ -103,6 +103,8 @@ bookButtons.forEach(function(button) {
 contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
+    contactStatus.textContent = '';
+
     const name = contactName.value.trim();
     const email = contactEmail ? contactEmail.value.trim() : '';
     const message = contactMessage ? contactMessage.value.trim() : '';
@@ -130,8 +132,12 @@ contactForm.addEventListener('submit', function(event) {
 
     // show confirmation once all fields are valid
     contactStatus.textContent = 
-    `Thank you for your message, ${name}! We will get back to you soon.`;
+    `Thank you, ${name}! We will get back to you as soon as possible.`;
     
     // reset the form
     contactForm.reset();
+
+    setTimeout(function() {
+        contactStatus.textContent = '';
+    }, 5000);
 });

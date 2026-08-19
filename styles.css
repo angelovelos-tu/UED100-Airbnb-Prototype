@@ -343,3 +343,10 @@ nav a:focus-visible {
         padding: 60px 20px;
     }
 }
+
+/* Booking selection feedback */
+#search-form.booking-highlight {
+    outline: 3px solid #222;
+    outline-offset: 6px;
+    transition: outline 0.3s ease;
+}
